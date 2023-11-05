@@ -3,7 +3,7 @@ def abbreviation(string: str):
     try:
         words: List[str] = string.split()
         if len(words) < 2:
-            raise Exception("Less than 2 words!")
+            raise Exception("Less than 2 words")
 
 
         for k in range(len(words)):
@@ -13,9 +13,9 @@ def abbreviation(string: str):
         print(abb.upper())
 
     except Exception as ex:
-        print("Wrong data format!")
+        print("Wrong data format!", ex)
 
 
-# abbreviation('comp mech lab')
-# abbreviation('CompMechLab')
-# abbreviation(['Comp', 'Mech','Lab'])
+abbreviation('comp mech lab')
+abbreviation('CompMechLab')
+abbreviation(['Comp', 'Mech','Lab'])
