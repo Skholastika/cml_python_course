@@ -16,6 +16,6 @@ def abbreviation(string: str):
         print("Wrong data format!", ex)
 
 
-abbreviation('comp mech lab')
-abbreviation('CompMechLab')
-abbreviation(['Comp', 'Mech','Lab'])
+# abbreviation('comp mech lab')
+# abbreviation('CompMechLab')
+# abbreviation(['Comp', 'Mech','Lab'])
