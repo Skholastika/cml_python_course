@@ -41,7 +41,9 @@ class Tree:
         return True
 
     def harvest(self):
-        self.apples = []  # ???????
+        for apple in self.apples:
+            del apple
+        del self.apples  # ???????
         print('No more apples on this tree.')
 
 
@@ -77,7 +79,4 @@ g.care()
 g.harvest()
 g.care()
 g.harvest()
-
-
-
-
+print(t.apples)
